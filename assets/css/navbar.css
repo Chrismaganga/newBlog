@@ -15,6 +15,7 @@ header {
 
 .navbar {
     display: flex;
+    margin: auto;
     justify-content: space-between; /* Space between logo and links */
     align-items: center; /* Center vertically */
     padding: 15px 20px; /* Add padding for spacing */
@@ -23,7 +24,8 @@ header {
 .logo a {
     color: white; /* Logo text color */
     text-decoration: none; /* Remove underline from link */
-    font-size: 24px; /* Logo size */
+    font-size: 14px; /* Logo size */
+    margin: 20px;
 }
 
 .nav-links {

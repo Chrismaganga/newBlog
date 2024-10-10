@@ -33,3 +33,79 @@ header {
     align-items: center;
     margin: 5px;
 }
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.blog-header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between links */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-post {
+    padding: 20px;
+}
+
+.post-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author-info .avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.author-details {
+    flex: 1;
+}
+
+.social-sharing {
+    margin-top: 20px;
+}
+
+.social-sharing a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0077cc; /* Link color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1b1a1a;
+    color: #dfd3d3;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+}
+title {
+    background-color: blue;
+}
