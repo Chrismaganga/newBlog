@@ -3,55 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Blog</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar" id="navbar">
-            <div class="logo"><a href="index.html">My Blog</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <button class="menu-toggle" id="menuToggle">☰</button>
+    <header class="blog-header">
+        <h1>Blog Title</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    
-    <main class="homepage">
-        <h1>Welcome to My Blog</h1>
-        <section class="posts">
-            <article class="post">
-                <h2><a href="post.html?id=1">Blog Post Title 1</a></h2>
-                <p>Summary of the blog post content...</p>
-            </article>
-            <article class="post">
-                <h2><a href="post.html?id=2">Blog Post Title 2</a></h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolor accusamus? Quos incidunt deleniti officia debitis fugiat culpa repellendus amet magnam tenetur, ea, doloribus harum nobis. Quia velit sapiente ab.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolor accusamus? Quos incidunt deleniti officia debitis fugiat culpa repellendus amet magnam tenetur, ea, doloribus harum nobis. Quia velit sapiente ab.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolor accusamus? Quos incidunt deleniti officia debitis fugiat culpa repellendus amet magnam tenetur, ea, doloribus harum nobis. Quia velit sapiente ab.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, dolor accusamus? Quos incidunt deleniti officia debitis fugiat culpa repellendus amet magnam tenetur, ea, doloribus harum nobis. Quia velit sapiente ab.
-                  </p>
-            </article>
-            <!-- Add more posts as needed -->
+
+    <main class="blog-post">
+        <article>
+            <h2>Blog Post Title</h2>
+            <p class="post-date">Published on October 10, 2024</p>
+            <img src="assets/images/author.png" alt="Blog Post Image" class="post-image">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <!-- Add more content as needed -->
+        </article>
+
+        <section class="author-info">
+            <img src="assets//images/author.png" alt="Author Avatar" class="avatar">
+            <div class="author-details">
+                <h3 class="author-name">John Doe</h3>
+                <p class="author-title">Software Engineer at XYZ Company</p>
+                <p class="author-bio">Short bio about the author goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </section>
+
+        <section class="social-sharing">
+            <h4>Share this post:</h4>
+            <a href="https://twitter.com/share?url=YOUR_POST_URL" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=YOUR_POST_URL" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_POST_URL" target="_blank">LinkedIn</a>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 My Blog</p>
+        <p>&copy; 2024 codelovers.com</p>
     </footer>
-    
-    <script src="scripts/main.js"></script> 
-    <script src="scripts/navbar.js"></script>
-    <script src="scripts/main.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>

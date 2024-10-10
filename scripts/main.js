@@ -63,5 +63,13 @@ function init() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle active class to show/hide links
+    });
+});
 // Initialize the script
 document.addEventListener('DOMContentLoaded', init);

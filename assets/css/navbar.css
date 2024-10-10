@@ -1,43 +1,76 @@
+/* navbar.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333; /* Dark background for navbar */
+    color: white;
+    position: sticky; /* Stick navbar to the top */
+    top: 0;
+    z-index: 1000; /* Keep it above other content */
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Center vertically */
+    padding: 15px 20px; /* Add padding for spacing */
+}
+
+.logo a {
+    color: white; /* Logo text color */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 24px; /* Logo size */
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
+    list-style: none; /* Remove bullets from list */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between nav links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.nav-links li {
-    margin: 20px;
+.nav-links li a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links li a:hover {
+    color: #00aaff; /* Change color on hover */
 }
 
 .menu-toggle {
-    display: none;
+    display: none; /* Hide menu toggle button by default */
+    background: none; /* Remove default button styling */
+    border: none; /* Remove border */
+    color: white; /* Button text color */
+    font-size: 24px; /* Button size */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        background: #333;
-        width: 100%;
+        display: none; /* Hide nav links on small screens */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position dropdown */
+        background: #333; /* Background for dropdown */
+        top: 60px; /* Position below navbar */
+        right: 0; /* Align to the right */
+        width: 200px; /* Set width */
+        z-index: 999; /* Keep dropdown above content */
     }
 
-    .nav-links.show {
-        display: flex;
+    .nav-links.active {
+        display: flex; /* Show links when active */
     }
 
     .menu-toggle {
-        display: block;
-        background: transparent;
-        border: none;
-        color: #fff;
-        font-size: 24px;
+        display: block; /* Show menu toggle button on small screens */
     }
 }

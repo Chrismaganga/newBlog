@@ -28,3 +28,8 @@ header {
     align-items: center; /* Center align items vertically */
     padding: 0 20px; /* Horizontal padding */
 }
+.title {
+    text-decoration-color: blue;
+    align-items: center;
+    margin: 5px;
+}
