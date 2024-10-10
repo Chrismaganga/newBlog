@@ -1,0 +1,30 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Set the height for html and body to 100% */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Example font-family */
+}
+
+/* Ensure the main content area takes full height */
+main {
+    min-height: calc(100% - 60px); /* Adjust 60px based on header/footer height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding: 20px; /* Example padding */
+}
+
+/* Optional: Style your header and footer */
+header {
+    height: 60px; /* Fixed height for header */
+    background-color: #333; /* Example background */
+    color: white; /* Text color */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    padding: 0 20px; /* Horizontal padding */
+}
